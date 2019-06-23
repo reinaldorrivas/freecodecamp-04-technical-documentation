@@ -164,15 +164,15 @@ code {
       margin-left: 0px;
       margin-top: 310px;
     }
+
+    section li {
+        margin: 0;
+        padding: 0;
+    }
   }
   
-  @media only screen and (max-width: 400px) {
-    #main-doc {
-      margin-left: -10px;
-    }
-  
+  @media only screen and (max-width: 400px) {  
     code {
-      margin-left: -20px;
       width: 100%;
       padding: 15px;
       padding-left: 10px;
