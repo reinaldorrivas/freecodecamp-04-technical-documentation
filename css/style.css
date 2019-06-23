@@ -3,8 +3,12 @@
 @import url('https://fonts.googleapis.com/css?family=B612+Mono|Open+Sans&display=swap');
 
 :root {
-    --color-fuente-principal: #555555;
-    --borde-principal: 1px solid black;
+    --color-fuente-principal: white;
+    --borde-principal: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+*{
+    box-sizing: border-box;
 }
 
 html,
@@ -16,6 +20,21 @@ body {
     line-height: 1.5;
 }
 
+html {
+    background-image: url("../img/backgrounds/background-blur-clean-531880.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+}
+
 #navbar {
     position: fixed;
     width: 290px;
@@ -23,12 +42,12 @@ body {
     left: 0px;
     width: 300px;
     height: 100%;
-    border-right: var(--borde-principal);
 }
 
 #navbar header,
 #main-doc section header h2 {
-    color: black;
+    color: rgba(201, 201, 201, 0.8);
+    font-variant: small-caps;
 }
 
 #navbar header {
@@ -45,29 +64,33 @@ body {
 
 #navbar li {
     color: var(--color-fuente-principal);
-    border-top: var(--borde-principal);
     list-style: none;
     position: relative;
     width: 100%;
 }
 
-#navbar li:last-child {
-    border-bottom: var(--borde-principal);
-}
-
 #navbar a {
+    font-variant: small-caps;
+    font-weight: bold;
     display: block;
     padding: 10px 20px;
     color: var(--color-fuente-principal);
     text-decoration: none;
     cursor: pointer;
+    transition: all ease-in-out 500ms;
+}
+
+#navbar a:hover {
+    color: hsl(180, 50%, 40%);    
 }
 
 #main-doc {
     position: relative;
+    margin: 10px;
     margin-left: 310px;
     padding: 20px;
     margin-bottom: 110px;
+    border-left: 1px solid rgba(255, 255, 255, 0.6);
 }
 
 #main-doc > section header h2 {
@@ -83,8 +106,17 @@ section article {
     margin: 15px;
 }
 
+#main-doc article p {
+    text-indent: 1rem;
+    text-align: justify;
+    word-break: break-all;
+    word-wrap: break-word;
+}
+
 section li {
     margin: 15px 0px 0px 20px;
+    word-break: break-all;
+    word-wrap: break-word;
 }
 
 code {
@@ -94,7 +126,7 @@ code {
     white-space: pre-line;
     position: relative;
     line-height: 2;
-    background-color: #f7f7f7;
+    background-color: rgba(247, 247, 247, 0.5);
     padding: 15px;
     margin: 10px;
     border-radius: 5px;
@@ -102,9 +134,14 @@ code {
 
 @media only screen and (max-width: 815px) {
     /* For mobile phones: */
+
+    #main-doc {
+        border-left: none;
+    }
     
     #navbar {
-        background-color: white;
+        background-color: rgba(0, 0, 0, 0.5);
+        border-radius: 10px;
         position: absolute;
         padding: 0;
         margin: 0;
@@ -115,21 +152,17 @@ code {
     }
     
     #navbar ul {
-      border: var(--borde-principal);
-      height: 226px;
+      height: 250px;
     }
 
-    #navbar li:first-child {
-        border-top: none;
-    }
-    
+    #navbar li,
     #navbar li:last-child {
-        border-bottom: none;
+        border: none;
     }
 
     #main-doc {
       margin-left: 0px;
-      margin-top: 300px;
+      margin-top: 310px;
     }
   }
   
