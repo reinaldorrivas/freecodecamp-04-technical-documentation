@@ -131,7 +131,7 @@ code {
     html {
         background-image: url("../img/backgrounds/background-MD.jpg");
         width: 100vw;
-        height: auto;
+        height: 100vh;
     }
 
     body {
