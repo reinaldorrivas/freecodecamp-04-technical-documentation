@@ -21,7 +21,7 @@ body {
 }
 
 html {
-    background-image: url("../img/backgrounds/background-blur-clean-531880.jpg");
+    background-image: url("../img/backgrounds/background-XL.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -179,7 +179,10 @@ code {
     }
   }
   
-  @media only screen and (max-width: 400px) {  
+  @media only screen and (max-width: 400px) { 
+    html {
+        background-image: url("../img/backgrounds/background-SM.jpg");
+    }
     code {
       width: 100%;
       padding: 15px;
