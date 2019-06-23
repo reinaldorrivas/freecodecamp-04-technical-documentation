@@ -133,7 +133,10 @@ code {
 }
 
 @media only screen and (max-width: 815px) {
-    /* For mobile phones: */
+    html {
+        background-image: url("../img/backgrounds/background-SM.jpg");
+    }
+
     body {
         font-size: small;
     }
@@ -183,6 +186,7 @@ code {
     html {
         background-image: url("../img/backgrounds/background-SM.jpg");
     }
+
     code {
       width: 100%;
       padding: 15px;
