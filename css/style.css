@@ -124,7 +124,6 @@ code {
     line-height: 2;
     background-color: rgba(247, 247, 247, 0.5);
     padding: 15px;
-    margin: 10px;
     border-radius: 5px;
 }
 
@@ -181,14 +180,6 @@ code {
   @media only screen and (max-width: 400px) { 
     html {
         background-image: url("../img/backgrounds/background-SM.jpg");
-    }
-
-    code {
-      width: 100%;
-      padding: 15px;
-      padding-left: 10px;
-      padding-right: 45px;
-      min-width: 233px;
     }
 
     #main-doc section article ul {
