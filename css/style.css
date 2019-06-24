@@ -11,13 +11,6 @@
     box-sizing: border-box;
 }
 
-html,
-body {
-    color: var(--color-fuente-principal);
-    font-family: "Open Sans", Arial, sans-serif;
-    line-height: 1.5;
-}
-
 html {
     background: aquamarine url("../img/backgrounds/background-XL.jpg") center center / cover no-repeat fixed;
     margin: 0;
@@ -25,6 +18,9 @@ html {
 }
 
 body {
+    color: var(--color-fuente-principal);
+    font-family: "Open Sans", Arial, sans-serif;
+    line-height: 1.5;
     background-color: rgba(0, 0, 0, 0.5);
     border-radius: 10px;
 }
@@ -34,7 +30,6 @@ body {
     top: 0px;
     left: 0px;
     width: 300px;
-    height: 100%;
 }
 
 #navbar header,
@@ -152,7 +147,7 @@ code {
     
     #navbar ul {
         display: flex;
-        text-align: center;
+        justify-content: space-between;
     }
 
     #navbar li,
@@ -177,6 +172,6 @@ code {
     }
 
     #main-doc section article ul {
-        padding-left: 10px;
+        padding-left: 3px;
     }
   }
