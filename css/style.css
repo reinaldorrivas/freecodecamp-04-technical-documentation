@@ -13,9 +13,7 @@
 
 html,
 body {
-    min-width: 290px;
     color: var(--color-fuente-principal);
-    background-color: #fff;
     font-family: "Open Sans", Arial, sans-serif;
     line-height: 1.5;
 }
@@ -33,7 +31,6 @@ body {
 
 #navbar {
     position: fixed;
-    width: 290px;
     top: 0px;
     left: 0px;
     width: 300px;
@@ -47,12 +44,10 @@ body {
 }
 
 #navbar header {
-    margin: 10px;
     text-align: center;
 }
 
 #navbar ul {
-    height: 100%;
     padding: 0;
     overflow-x: hidden;
     overflow-y: auto;
@@ -61,8 +56,6 @@ body {
 #navbar li {
     color: var(--color-fuente-principal);
     list-style: none;
-    position: relative;
-    width: 100%;
 }
 
 #navbar a {
@@ -85,7 +78,6 @@ body {
     margin: 10px;
     margin-left: 310px;
     padding: 20px;
-    margin-bottom: 110px;
     border-left: 1px solid rgba(255, 255, 255, 0.6);
 }
 
