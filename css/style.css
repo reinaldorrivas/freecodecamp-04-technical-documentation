@@ -8,7 +8,8 @@
 }
 
 *{
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
 }
 
 html {
@@ -59,6 +60,7 @@ body {
     color: var(--color-fuente-principal);
     text-decoration: none;
     cursor: pointer;
+    -webkit-transition: all ease-in-out 500ms;
     transition: all ease-in-out 500ms;
 }
 
@@ -74,6 +76,7 @@ body {
 }
 
 #main-doc > section header h2 {
+    -webkit-transition: all ease 1s;
     transition: all ease 1s;
 }
 
@@ -143,8 +146,11 @@ code {
     }
     
     #navbar ul {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        justify-content: space-around;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
     }
 
     #navbar li,
