@@ -111,7 +111,7 @@ code {
     border-radius: 5px;
 }
 
-@media only screen and (max-width: 815px) {
+@media only screen and (max-width: 839px) {
     html {
         background-image: url("../img/backgrounds/background-MD.jpg");
         height: 100vh;
@@ -163,7 +163,7 @@ code {
     }
   }
   
-  @media only screen and (max-width: 400px) { 
+  @media only screen and (max-width: 479px) { 
     html {
         background-image: url("../img/backgrounds/background-SM.jpg");
     }
