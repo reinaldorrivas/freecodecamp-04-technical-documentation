@@ -147,7 +147,7 @@ code {
     
     #navbar ul {
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
     }
 
     #navbar li,
